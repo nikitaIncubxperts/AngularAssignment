@@ -1,0 +1,27 @@
+#home-image {
+    width: auto;
+    height: auto;
+}
+.head {
+    display: flex;
+    background-color: #F7B6BD;
+
+}
+#logo {
+    height: 90px;
+    width: 100px;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+#username {
+    margin-left: 70%;
+    margin-top: 50px;
+}
+#profile {
+    height: 90px;
+    width: 100px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
