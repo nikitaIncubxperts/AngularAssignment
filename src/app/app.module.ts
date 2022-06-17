@@ -1,22 +1,18 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { AdminModule } from './admin/admin.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
-import { ContentComponent } from './content/content.component';
-import { CustomerModule } from './customer/customer.module';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    SidebarComponent,
-    ContentComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CustomerModule
+    AdminModule
   ],
   providers: [],
   bootstrap: [AppComponent]

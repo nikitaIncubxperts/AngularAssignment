@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'AngularAssignmentProject'`, () => {
+  it(`should have as title 'nested-lazy-routing-Assignment'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('AngularAssignmentProject');
+    expect(app.title).toEqual('nested-lazy-routing-Assignment');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('AngularAssignmentProject app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('nested-lazy-routing-Assignment app is running!');
   });
 });
