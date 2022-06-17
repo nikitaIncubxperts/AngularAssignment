@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+}
+
+.left {
+    width: 20%;
+    height: 100vh;
+    border: 2px solid black;
+}
+
+.right {
+    width: 80%;
+    height: 100vh;
+    border: 2px solid black;
+}
