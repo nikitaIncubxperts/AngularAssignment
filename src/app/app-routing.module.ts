@@ -7,5 +7,7 @@ const routes: Routes = [{ path: 'content', component: ContentComponent }];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
+
+
 })
 export class AppRoutingModule { }
