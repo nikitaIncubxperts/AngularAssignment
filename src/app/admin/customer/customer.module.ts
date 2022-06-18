@@ -1,16 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { CustomerRoutingModule } from './customer-routing.module';
-import { AdminModule } from '../admin.module';
-
+import { InnerHeaderComponent } from './inner-header/inner-header.component';
+import { InnerMainComponent } from './inner-main/inner-main.component';
+import { CustomerComponent } from './customer/customer.component';
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule,
-    CustomerRoutingModule
-  ]
-  
+  declarations: [InnerHeaderComponent, InnerMainComponent, CustomerComponent],
+  imports: [CommonModule, CustomerRoutingModule],
 })
-export class CustomerModule { }
+export class CustomerModule {}

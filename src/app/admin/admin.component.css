@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: rgb(108, 146, 250);
+    height: 50px;
+    text-align: center;
+    border: 2px solid black;
+}
+.container{
+    display: flex;
+}
+.sidebar{
+    width: 25%;
+    background-color: rgb(77, 109, 199);
+    height: 100vh;
+    border: 2px solid black;
+}
+.main{
+    width: 75%;
+    height: 100vh;
+    border: 2px solid black;
+}
+.upper-content{
+    border: 2px solid black;
+}
