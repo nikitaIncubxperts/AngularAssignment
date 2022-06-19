@@ -9,9 +9,9 @@ const routes: Routes = [
     path: 'customer',
     component: CustomerComponent,
     children: [
-      { path: 'innerheader', component: InnerHeaderComponent },
+      { path: '', component: InnerHeaderComponent },
       {
-        path: 'innermain',
+        path: '',
         component: InnerMainComponent,
       },
     ],
