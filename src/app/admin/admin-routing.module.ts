@@ -7,15 +7,18 @@ const routes: Routes = [
   {
     path: '',
     component: AdminComponent,
-  },
-  {
-    path: 'customer',
-    component: CustomerComponent,
-  },
+    children: [
+      {
+        path: 'customer',
+        loadChildren: () =>
+          import('./customer/customer.module').then((m) => m.CustomerModule),
+      }
+    ]
+  }
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class AdminRoutingModule {}
+export class AdminRoutingModule { }

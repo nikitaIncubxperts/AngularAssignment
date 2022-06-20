@@ -1,0 +1,22 @@
+a {
+    float: right;
+    font-size: 22px;
+}
+
+header {
+    border: 2px solid black;
+    height: 35px;
+}
+
+#back {
+    margin-right: 10px;
+}
+
+#add {
+    margin-right: 30px;
+}
+
+.headbtn {
+    float: right;
+    display: flex;
+}

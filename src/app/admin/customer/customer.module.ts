@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CustomerRoutingModule } from './customer-routing.module';
-import { InnerHeaderComponent } from './inner-header/inner-header.component';
-import { InnerMainComponent } from './inner-main/inner-main.component';
 import { CustomerComponent } from './customer/customer.component';
+import { ListComponent } from './list/list.component';
+import { AddComponent } from './add/add.component';
 
 @NgModule({
-  declarations: [InnerHeaderComponent, InnerMainComponent, CustomerComponent],
+  declarations: [CustomerComponent, ListComponent, AddComponent],
   imports: [CommonModule, CustomerRoutingModule],
 })
-export class CustomerModule {}
+export class CustomerModule { }

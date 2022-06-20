@@ -1,30 +1,23 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AddComponent } from './add/add.component';
 import { CustomerComponent } from './customer/customer.component';
-import { InnerHeaderComponent } from './inner-header/inner-header.component';
-import { InnerMainComponent } from './inner-main/inner-main.component';
+import { ListComponent } from './list/list.component';
 
 const routes: Routes = [
   {
-    path: 'customer',
+    path: '',
     component: CustomerComponent,
     children: [
-      { path: '', component: InnerHeaderComponent },
-      {
-        path: '',
-        component: InnerMainComponent,
-      },
-    ],
+      { path: '', component: ListComponent },
+      { path: 'add', component: AddComponent },
+      { path: 'list', component: ListComponent }
+    ]
   },
-
-  //load childrens in innner components
-  // {
-  //   path:'admin/customer', component:
-  // }
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class CustomerRoutingModule {}
+export class CustomerRoutingModule { }

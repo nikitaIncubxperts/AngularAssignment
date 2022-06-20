@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { InnerMainComponent } from './inner-main.component';
+import { ListComponent } from './list.component';
 
-describe('InnerMainComponent', () => {
-  let component: InnerMainComponent;
-  let fixture: ComponentFixture<InnerMainComponent>;
+describe('ListComponent', () => {
+  let component: ListComponent;
+  let fixture: ComponentFixture<ListComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ InnerMainComponent ]
+      declarations: [ ListComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(InnerMainComponent);
+    fixture = TestBed.createComponent(ListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
