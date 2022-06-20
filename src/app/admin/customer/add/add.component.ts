@@ -9,6 +9,13 @@ export class AddComponent implements OnInit {
 
   constructor() { }
 
+  add() {
+    let firstname = (<HTMLInputElement>document.getElementById("first-in")).value;
+    let lastname = (<HTMLInputElement>document.getElementById("last-in")).value;
+    let city = (<HTMLInputElement>document.getElementById("city-in")).value;
+    alert(firstname + ' ' + lastname + ' ' + city)
+  }
+
   ngOnInit(): void {
   }
 
