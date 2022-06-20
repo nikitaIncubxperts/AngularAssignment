@@ -1,27 +1,39 @@
-body{
+body {
     margin: 0;
     padding: 0;
 }
-header{
+
+header {
     background-color: rgb(108, 146, 250);
     height: 50px;
     text-align: center;
     border: 2px solid black;
 }
-.container{
+
+.container {
     display: flex;
 }
-.sidebar{
+
+.sidebar {
     width: 25%;
     background-color: rgb(77, 109, 199);
     height: 100vh;
     border: 2px solid black;
 }
-.main{
+
+.main {
     width: 75%;
     height: 100vh;
     border: 2px solid black;
 }
-.upper-content{
+
+.upper-content {
     border: 2px solid black;
+}
+
+li,
+a {
+    font-size: 22px;
+    font-weight: bolder;
+    color: black;
 }

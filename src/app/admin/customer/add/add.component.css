@@ -8,7 +8,8 @@ label {
 
 #first-in,
 #last-in,
-#city-in {
+#city-in,
+#id-in {
     height: 40px;
     width: 43%;
     background-color: #D7D8D4;
@@ -20,6 +21,17 @@ label {
 
 #addbtn {
     width: auto;
+    height: auto;
+    padding: 7px;
+    font-size: 18px;
+    font-weight: bolder;
+    border-radius: 12px;
+    background-color: rgb(214, 213, 223);
+}
+
+#editbtn {
+    margin-left: 10px;
+    width: 160px;
     height: auto;
     padding: 7px;
     font-size: 18px;

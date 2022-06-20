@@ -8,11 +8,12 @@ header {
     height: 35px;
 }
 
-#back {
+#back,
+#add {
     margin-right: 10px;
 }
 
-#add {
+#edit {
     margin-right: 30px;
 }
 

@@ -9,6 +9,11 @@ export class CustomerComponent implements OnInit {
 
   constructor() { }
 
+  add() {
+    let id = (<HTMLInputElement>document.getElementById("id-in")).value;
+    alert(id)
+  }
+
   ngOnInit(): void {
   }
 
