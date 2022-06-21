@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header-container {
+    width: 100%;
+    height: 80px;
+}
+
+.head {
+    display: flex;
+    float: right;
+}
+
+#profile {
+    height: 60px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.userinfo {
+    margin-right: 100px;
+    height: 75px;
+}
+
+.container {
+    display: flex;
+}
+
+.right {
+    width: 100%;
+    height: 100vh;
+}
+
+.left {
+    width: 100%;
+    height: 100vh;
+}
+
+label {
+    font-size: 22px;
+}
+
+#dob {
+    font-size: 22px;
+    font-weight: bold;
+    padding: 8px;
+    width: auto;
+    background-color: rgb(226, 218, 221);
+}
+
+#calbtn {
+    font-size: 19px;
+    font-weight: bolder;
+    padding: 8px;
+    border-radius: 12px;
+    background-color: rgb(32, 31, 32);
+    color: white;
+}
+
+.inner-left-container {
+    margin-top: 30%;
+    margin-left: 25%;
+    margin-right: auto;
+    margin-bottom: auto;
+    display: block;
+}
+
+#fname-in,
+#lname-in,
+#username-in,
+#email-in {
+    height: 30px;
+    width: 70%;
+    background-color: #D7D8D4;
+    border-radius: 12px;
+    font-family: fontawesome;
+    font-size: 18px;
+    border: 0;
+}
+
+.right-inner {
+    margin-top: 170px;
+    margin-left: 130px;
+}
+
+#submit {
+    width: 80px;
+    height: 40px;
+    background-color: rgb(81, 83, 83);
+}
+
+.submit {
+    margin-left: 140px;
+}
