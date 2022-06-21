@@ -34,26 +34,30 @@
         </div>
       </div>
       <div class="right">
-        <div class="right-inner">
-          <div class="fname">
-            <label>First Name</label><br>
-            <input name="fname" id="fname-in" type="text" class="form-control">
+        <form name="myform">
+          <div class="right-inner">
+            <div class="fname">
+              <label>First Name</label><br>
+              <input name="fname" id="fname-in" type="text"
+                class="form-control">
+            </div>
+            <div class="lname">
+              <label>Last Name</label><br>
+              <input name="lname" id="lname-in" type="text"
+                class="form-control">
+            </div>
+            <div class="username">
+              <label>Username</label><br>
+              <input name="username" id="username-in" [(ngModel)]="username"
+                type="text" class="form-control">
+            </div>
+            <div class="email">
+              <label>Email</label><br>
+              <input name="email" id="email-in" [(ngModel)]="email" type="text"
+                class="form-control">
+            </div>
           </div>
-          <div class="lname">
-            <label>Last Name</label><br>
-            <input name="lname" id="lname-in" type="text" class="form-control">
-          </div>
-          <div class="username">
-            <label>Username</label><br>
-            <input name="username" id="username-in" [(ngModel)]="username"
-              type="text" class="form-control">
-          </div>
-          <div class="email">
-            <label>Email</label><br>
-            <input name="email" id="email-in" [(ngModel)]="email" type="text"
-              class="form-control">
-          </div>
-        </div><br><br>
+        </form><br><br>
         <div class="submit">
           <button id="submit" type="button" (click)="showuser()"
             class="form-control">Submit</button>

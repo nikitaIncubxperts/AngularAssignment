@@ -9,14 +9,14 @@ export class AppComponent {
   age: any;
   showAge: any;
 
-
   ageCalculator() {
     if (this.age) {
-      const convertAge = new Date(this.age);
-      const timeDiff = Math.abs(Date.now() - convertAge.getTime());
-      this.showAge = Math.floor((timeDiff / (1000 * 3600 * 24)) / 365);
+      const convertAge = new Date(this.age);  //converted into indian std time
+      console.log(convertAge);
+      const timeDiff = Math.abs(Date.now() - convertAge.getTime()); //present date(in second)-selected date(in second)
+      console.log(timeDiff);
+      this.showAge = Math.floor((timeDiff / (1000 * 3600 * 24)) / 365); //
       console.log(this.showAge);
-
     }
   }
 
@@ -33,6 +33,9 @@ export class AppComponent {
       }
     ]
     console.log(arr);
-
+    (<HTMLInputElement>document.getElementById("fname-in")).value = '';
+    (<HTMLInputElement>document.getElementById("lname-in")).value = '';
+    (<HTMLInputElement>document.getElementById("username-in")).value = '';
+    (<HTMLInputElement>document.getElementById("email-in")).value = '';
   }
 }
