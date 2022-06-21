@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet">
     <title>Data-Binding</title>
   </head>
   <body>
@@ -17,11 +20,12 @@
         </div>
       </div>
     </header>
+    <hr>
     <div class="container">
       <div class="left">
         <div class="inner-left-container">
           <label>Select date of Birth: </label><br><br>
-          <input id="dob" type="date" [(ngModel)]="age" /><br><br>
+          <input id="dob" type="date" [(ngModel)]="age" class="form-control" /><br><br>
           <button id="calbtn" type="button" (click)="ageCalculator()"> know your
             age</button><br><br>
           <div [ngStyle]="{'color':showAge <18 ? 'red'
@@ -33,26 +37,30 @@
         <div class="right-inner">
           <div class="fname">
             <label>First Name</label><br>
-            <input name="fname" id="fname-in" type="text">
+            <input name="fname" id="fname-in" type="text" class="form-control">
           </div>
           <div class="lname">
             <label>Last Name</label><br>
-            <input name="lname" id="lname-in" type="text">
+            <input name="lname" id="lname-in" type="text" class="form-control">
           </div>
           <div class="username">
             <label>Username</label><br>
             <input name="username" id="username-in" [(ngModel)]="username"
-              type="text">
+              type="text" class="form-control">
           </div>
           <div class="email">
             <label>Email</label><br>
-            <input name="email" id="email-in" [(ngModel)]="email" type="text">
+            <input name="email" id="email-in" [(ngModel)]="email" type="text"
+              class="form-control">
           </div>
         </div><br><br>
         <div class="submit">
-          <button id="submit" type="button" (click)="showuser()">Submit</button>
+          <button id="submit" type="button" (click)="showuser()"
+            class="form-control">Submit</button>
         </div>
       </div>
     </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

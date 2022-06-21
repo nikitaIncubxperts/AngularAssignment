@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  age:any;
+  age: any;
   showAge: any;
 
 
@@ -20,10 +20,19 @@ export class AppComponent {
     }
   }
 
-  username:any;
-  email:any;
+  username: any;
+  email: any;
   showuser() {
+    let fname = (<HTMLInputElement>document.getElementById("fname-in")).value;
+    let lname = (<HTMLInputElement>document.getElementById("lname-in")).value;
     let username = (<HTMLInputElement>document.getElementById("username-in")).value;
     let email = (<HTMLInputElement>document.getElementById("email-in")).value;
+    let arr = [
+      {
+        fname, lname, username, email
+      }
+    ]
+    console.log(arr);
+
   }
 }
