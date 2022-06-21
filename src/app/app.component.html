@@ -1,1 +1,14 @@
-<router-outlet></router-outlet>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Last name</th>
+        <th>Zip</th>
+        <th>Phone no</th>
+    </tr>
+    <tr *ngFor="let data of rows">
+        <td>{{data.Name}}</td>
+        <td>{{data.Lastname}}</td>
+        <td>{{data.Zip}}</td>
+        <td>{{data.Phoneno}}</td>
+    </tr>
+</table>
