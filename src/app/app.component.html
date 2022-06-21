@@ -3,12 +3,14 @@
         <th>Name</th>
         <th>Last name</th>
         <th>Zip</th>
-        <th>Phone no</th>
+        <th *ngIf="click">Phone no</th>
     </tr>
     <tr *ngFor="let data of rows">
         <td>{{data.Name}}</td>
         <td>{{data.Lastname}}</td>
         <td>{{data.Zip}}</td>
-        <td>{{data.Phoneno}}</td>
+        <td *ngIf="click">{{data.Phoneno}}</td>
     </tr>
 </table>
+
+<button><a id="edit" (click)="hide()">{{hidetext}}</a></button>
