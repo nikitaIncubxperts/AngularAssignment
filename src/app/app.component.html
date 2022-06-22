@@ -1,16 +1,37 @@
-<table>
-    <tr>
-        <th>Name</th>
-        <th>Last name</th>
-        <th>Zip</th>
-        <th *ngIf="click">Phone no</th>
-    </tr>
-    <tr *ngFor="let data of rows">
-        <td>{{data.Name}}</td>
-        <td>{{data.Lastname}}</td>
-        <td>{{data.Zip}}</td>
-        <td *ngIf="click">{{data.Phoneno}}</td>
-    </tr>
-</table>
-
-<button><a id="edit" (click)="hide()">{{hidetext}}</a></button>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+        <title>Document</title>
+    </head>
+    <body>
+        <table class="table">
+            <tr>
+                <th>Name</th>
+                <th>Last name</th>
+                <th>Zip</th>
+                <th *ngIf="click">Phone no</th>
+            </tr>
+            <tr *ngFor="let data of rows">
+                <td *ngIf="(data.Name.length >= 5)" appCheckfirstletter>{{data.Name}}
+                    <td *ngIf="(data.Name.length <5)">{{data.Name}}</td>
+                    <td [ngStyle]="(data.Lastname[0] =='m'|| data.Lastname[0]
+                        =='M' ||
+                        data.Lastname[0] =='c'|| data.Lastname[0] =='C' ||
+                        data.Lastname[0] == 'd' || data.Lastname[0]=='D') ?
+                        bgColor:''">{{data.Lastname}}</td>
+                    <td>{{data.Zip}}</td>
+                    <td *ngIf="click">{{data.Phoneno}}</td>
+                </tr>
+            </table><br><br>
+            <button class="btn btn-outline-success"><a id="edit"
+                    (click)="hide()">{{hidetext}}</a></button>
+            <script
+                src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        </body>
+    </html>

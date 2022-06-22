@@ -7,6 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   click = true;
+  bgColor: any = {
+    'background-color': '#10101015'
+  };
   hidetext = 'hide';
   hide() {
     this.click = !this.click;
