@@ -8,11 +8,11 @@ import { Router } from '@angular/router';
 })
 export class SidebarComponent implements OnInit {
 
-  constructor(private abc:Router) { }
+  constructor(private route:Router) { }
 
   ngOnInit(): void {
   }
   linking(){
-    this.abc.navigate(['login']);
+    this.route.navigate(['login']);
   }
 }
